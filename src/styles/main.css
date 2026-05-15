@@ -1,0 +1,66 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+#app {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+}
+
+#board-container {
+  width: 576px; /* 9 * 64 */
+}
+
+#controls {
+  background: rgba(255,255,255,0.95);
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  font-family: sans-serif;
+  min-width: 200px;
+}
+
+#puzzle-feedback {
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+#puzzle-feedback.good {
+  background: #e6ffed;
+  color: #0b5f2b;
+  border: 1px solid #a6e3b0;
+}
+
+#puzzle-feedback.bad {
+  background: #fff0f0;
+  color: #7a0b0b;
+  border: 1px solid #f3a1a1;
+}
+
+.silhouette {
+  opacity: 0.5;
+}
+
+.selection-marker {
+  pointer-events: none;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(9, 64px);
+  grid-template-rows: repeat(10, 64px);
+}
+
+.square {
+  border: 1px solid #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0d39a;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+}

@@ -1,0 +1,3 @@
+.svg-board .square.selected circle { fill: rgba(255,0,0,0.14); }
+.svg-board .square.legal circle { fill: rgba(0,200,0,0.14); }
+.svg-board g.piece { transition: transform 200ms ease; }

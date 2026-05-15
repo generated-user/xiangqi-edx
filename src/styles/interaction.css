@@ -1,0 +1,10 @@
+/* Styles for SVG board interactions */
+.svg-board {
+  max-width: 576px;
+  max-height: 640px;
+  touch-action: none;
+}
+.drag-overlay svg {
+  width: 64px;
+  height: 64px;
+}

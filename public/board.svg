@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 800">
+    <defs>
+        <radialGradient id="boardGradient">
+            <stop offset="0%" stop-color="#996600" />
+            <stop offset="100%" stop-color="#774400" />
+        </radialGradient>
+    </defs>
+    <rect width="720" height="800" fill="url(#boardGradient)"/>
+    <g stroke="#000000" stroke-width="3" fill="none">
+        <path d="M 40,40 v 720 h 640 v -720 h -640 z m 80,0 v 320 m 80,0 v -320 m 80,0 v 320 m 80,0 v -320 m 80,0 v 320 m 80,0 v -320 m 80,0 v 320 m 0,80 v 320 m -80,0 v -320 m -80,0 v 320 m -80,0 v -320 m -80,0 v 320 m -80,0 v -320 m -80,0 v 320 M 40,120 h 640 m 0,80 h -640 m 0,80 h 640 m 0,80 h -640 m 0,80 h 640 m 0,80 h -640 m 0,80 h 640 m 0,80 h -640 M 280,40 l 160,160 m -160,0 l 160,-160 M 280,600 l 160,160 m -160,0 l 160,-160"/>
+        <path d="M 115,180 v 15 h -15 m 0,10 h 15 v 15 m 480,-40  v 15 h -15 m 0,10 h 15 v 15 m 80,40 v 15 h -15 m 0,10 h 15 v 15 m -160,-40 v 15 h -15 m 0,10 h 15 v 15 m -160,-40 v 15 h -15 m 0,10 h 15 v 15 m -160,-40 v 15 h -15 m 0,10 h 15 v 15 m 0,200 v 15 h -15 m 0,10 h 15 v 15 m 160,-40 v 15 h -15 m 0,10 h 15 v 15 m 160,-40 v 15 h -15 m 0,10 h 15 v 15 m 160,-40 v 15 h -15 m 0,10 h 15 v 15 m -80,40 v 15 h -15 m 0,10 h 15 v 15 m -480,-40 v 15 h -15 m 0,10 h 15 v 15 m 10,0 v -15 h 15 m 0,-10 h -15 v -15 m 480,40 v -15 h 15 m 0,-10 h -15 v -15 m -80,-40 v -15 h 15 m 0,-10 h -15 v -15 m -160,40 v -15 h 15 m 0,-10 h -15 v -15 m -160,40 v -15 h 15 m 0,-10 h -15 v -15 m -160,40 v -15 h 15 m 0,-10 h -15 v -15 m 0,-200 v -15 h 15 m 0,-10 h -15 v -15 m 160,40 v -15 h 15 m 0,-10 h -15 v -15 m 160,40 v -15 h 15 m 0,-10 h -15 v -15 m 160,40 v -15 h 15 m 0,-10 h -15 v -15 m 80,-40 v -15 h 15 m 0,-10 h -15 v -15 m -480,40 v -15 h 15 m 0,-10 h -15 v -15"/>
+    </g>
+</svg>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Xiangqi</title>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div id="board-container"></div>
+    <div id="controls" aria-label="Status panel">
+      <div id="status-panel">
+        <div><strong>Turn:</strong> <span id="turn-side">red</span></div>
+        <div><strong>Check:</strong> <span id="in-check">no</span></div>
+        <div style="margin-top:6px">
+          <label>Mode: <select id="mode-select">
+            <option value="normal">Normal</option>
+            <option value="free">Puzzle - Free move</option>
+            <option value="rule">Puzzle - Piece rules</option>
+            <option value="regular">Puzzle - Sequence</option>
+            <option value="vs">Play vs Computer</option>
+          </select></label>
+        </div>
+        <div style="margin-top:8px">
+          <button id="undo">Undo</button>
+          <button id="redo">Redo</button>
+        </div>
+        <div style="margin-top:8px">
+          <button id="export-pgn">Export PGN</button>
+          <button id="load-fen">Load FEN</button>
+        </div>
+        <div style="margin-top:8px">
+          <label style="display:block;margin-top:6px">Puzzle PGN (coordinate moves):</label>
+          <textarea id="puzzle-pgn" rows="3" style="width:100%" placeholder="04-24 76-56"></textarea>
+          <label style="display:block;margin-top:6px">Start FEN (optional):</label>
+          <input id="puzzle-start-fen" type="text" style="width:100%" placeholder="start FEN">
+          <div style="margin-top:6px">
+            <button id="load-puzzle">Load Puzzle</button>
+            <button id="puzzle-prev">Prev Step</button>
+            <button id="puzzle-next">Next Step</button>
+            <label style="margin-left:6px"><input id="puzzle-autoplay" type="checkbox"> Autoplay</label>
+          </div>
+        </div>
+        <div style="margin-top:8px">
+          <label>Engine skill: <input id="engine-skill" type="range" min="0" max="20" value="10"> <span id="engine-skill-value">10</span></label>
+        </div>
+        <textarea id="pgn-output" rows="3" style="width:100%;margin-top:6px"></textarea>
+        <div id="puzzle-feedback" style="margin-top:6px;color:#222;font-weight:600"></div>
+        <div style="margin-top:6px">
+          <button id="clear-feedback">Clear feedback</button>
+        </div>
+      </div>
+      <fieldset style="margin-top:12px">
+        <legend>Piece style</legend>
+        <label><input type="radio" name="piece-style" value="chinese" checked> Chinese only</label><br>
+        <label><input type="radio" name="piece-style" value="assisted"> Initial above</label><br>
+        <label><input type="radio" name="piece-style" value="abbr"> Abbreviation only</label>
+      </fieldset>
+    </div>
+  </div>
+</body>
+</html>

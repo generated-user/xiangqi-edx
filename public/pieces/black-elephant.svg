@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 -32 64 64">
+  <linearGradient id="pieceGradientBE" gradientTransform="rotate(45)">
+    <stop offset="0%" stop-color="#e6e6e6" />
+    <stop offset="100%" stop-color="#cfcfcf" />
+  </linearGradient>
+  <circle fill="url(#pieceGradientBE)" r="32"/>
+  <circle fill="none" stroke="#000" stroke-width="1.6" r="28"/>
+  <text x="0" y="0" font-size="44" text-anchor="middle" dominant-baseline="central" fill="#000" font-family="Kai,KaiTi">象</text>
+</svg>

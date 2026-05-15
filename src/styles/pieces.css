@@ -1,0 +1,45 @@
+:root{
+  --piece-red-stop1: #ffde9d;
+  --piece-red-stop2: #deba4e;
+  --piece-red-stroke: #DD0000;
+  --piece-red-text: #DD0000;
+
+  --piece-black-stop1: #ffde9d;
+  --piece-black-stop2: #deba4e;
+  --piece-black-stroke: #000000;
+  --piece-black-text: #000000;
+}
+
+/* Make piece text unselectable */
+.svg-board .piece text {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  pointer-events: none;
+}
+
+/* Piece style modes - add one of these classes to the root SVG element */
+.svg-board.piece-style-chinese .abbr { display: none; }
+.svg-board .assisted { display: none; }
+.svg-board.piece-style-chinese .chinese {
+  /* centered Chinese-only mode */
+  font-size: 30px;
+  font-family: Kai, KaiTi, serif;
+  transform: translateY(-1px);
+  transform-box: fill-box;
+}
+.svg-board.piece-style-assisted .assisted { display: block; font-size: 16px; transform: translateY(-1px); }
+.svg-board.piece-style-assisted .abbr { display: none; }
+.svg-board.piece-style-assisted .chinese {
+  /* mixed mode: Chinese slightly smaller and nudged up */
+  font-size: 24px;
+  font-family: Kai, KaiTi, serif;
+  transform: translateY(6px);
+  transform-box: fill-box;
+}
+.svg-board.piece-style-abbr .chinese { display: none; }
+.svg-board.piece-style-abbr .abbr {
+  display: block;
+  font-size: 20px;
+  font-family: sans-serif;
+}
